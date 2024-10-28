@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to the new stylesheet -->
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Create an Account</h2>
+        <form id="signupForm" class="signup-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" value="abhinav@gmail.com" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Signup</button>
+        </form>
+        <p class="text-center mt-3">Already have an account? <a href="login.html">Login here</a>.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

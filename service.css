@@ -1,0 +1,97 @@
+/* Set body styles for the background */
+body {
+    background-image: url('./img4.jpg'); /* Ensure this path is correct */
+    background-size: cover; /* Cover the entire viewport while maintaining aspect ratio */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    color: #191717; /* Text color for contrast */
+    font-family: 'Arial', sans-serif; /* Ensure a consistent font */
+}
+
+/* Navbar styles for better visibility */
+.navbar {
+    background-color: rgba(152, 143, 143, 0.8); /* Semi-transparent background */
+    width: 100%; /* Full width navbar */
+    position: fixed; /* Stick the navbar to the top */
+    top: 0; /* Top of the page */
+    z-index: 1000; /* Ensure the navbar stays on top */
+}
+
+/* Adjusting the container's background color for readability */
+.container {
+    background-color: rgba(255, 255, 255, 0.85); /* White semi-transparent background */
+    padding: 40px; /* More generous padding */
+    border-radius: 10px; /* Smoother rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    max-width: 800px; /* Wider form container */
+    width: 100%; /* Full width on smaller screens */
+    margin: 20px; /* Add margin for spacing */
+    -webkit-backdrop-filter: blur(10px); /* Blur the background behind the container for Safari */
+    backdrop-filter: blur(10px); /* Blur the background behind the container */
+    text-align: center; /* Center align text */
+}
+
+/* Optional: Ensure the body covers the whole viewport */
+html, body {
+    min-height: 100%; /* Full viewport coverage */
+}
+
+/* H2 Styling */
+h2 {
+    color: #34495e; /* Darker heading color */
+    margin-bottom: 30px; /* More space below heading */
+    font-weight: 700; /* Bold heading */
+    font-size: 2rem; /* Larger font size for emphasis */
+    text-align: center; /* Center align the heading */
+}
+
+/* Form Control Styling */
+.service-form .form-control {
+    border-radius: 8px; /* Smooth rounded corners */
+    border: 1px solid #ced4da; /* Light border for inputs */
+    padding: 12px; /* Padding for better touch targets */
+    font-size: 16px; /* Larger font size for readability */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover and focus */
+}
+
+.service-form .form-control:focus {
+    border-color: #3498db; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4); /* Soft focus shadow */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #1abc9c; /* Modern teal color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px 20px; /* Padding inside button */
+    font-size: 16px; /* Font size for button text */
+    color: white; /* White text for contrast */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.btn-primary:hover {
+    background-color: #16a085; /* Darker teal on hover */
+    transform: translateY(-3px); /* Subtle lift on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px; /* Add padding on small screens */
+    }
+
+    .container {
+        padding: 20px; /* Less padding on small screens */
+    }
+
+    h2 {
+        font-size: 1.75rem; /* Smaller heading for mobile */
+    }
+}

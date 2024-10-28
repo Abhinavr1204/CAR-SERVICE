@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa; /* Light background color */
+    font-family: 'Arial', sans-serif; /* Set font family */
+    color: #343a40; /* Dark text color */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height for vertical centering */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    max-width: 500px; /* Increase maximum width for larger form */
+    padding: 40px; /* Add more padding */
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Transition effect for scale */
+}
+
+/* Heading Styles */
+h2 {
+    color: #0e8faf; /* Primary brand color */
+    text-align: center; /* Center align heading */
+    margin-bottom: 30px; /* Space below heading */
+}
+
+/* Input Styles */
+.form-group {
+    margin-bottom: 30px; /* Space between form elements */
+}
+
+.form-control {
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 2px solid #007bff; /* Custom border color */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border color and shadow */
+    font-size: 18px; /* Increase font size */
+    padding: 15px; /* Increase padding for inputs */
+}
+
+.form-control:focus {
+    border-color: #0e8faf; /* Change border color on focus */
+    box-shadow: 0 0 8px rgba(14, 143, 175, 0.5); /* Shadow effect on focus */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #0e8faf; /* Custom button color */
+    border-color: #0e8faf; /* Border color matches background */
+    border-radius: 5px; /* Rounded corners for buttons */
+    width: 100%; /* Full width button */
+    padding: 15px; /* Increase button padding */
+    font-size: 18px; /* Increase button font size */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.btn-primary:hover {
+    background-color: #007bff; /* Darker blue on hover */
+    border-color: #0056b3; /* Darker border on hover */
+    color: white; /* Ensure text is white on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Animation for the container */
+.container:hover {
+    transform: scale(1.02); /* Slightly enlarge container on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 576px) {
+    .container {
+        padding: 20px; /* Adjust padding on mobile */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust heading size for mobile */
+    }
+
+    .form-control,
+    .btn-primary {
+        font-size: 16px; /* Adjust font size for mobile */
+    }
+}
+/* Set body to fill the entire viewport with a background image */
+/* Set body to fill the entire viewport with a background image */
+body {
+    background-image: url('./img2.jpg'); /* Use the full path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: white; /* Set text color to white for contrast */
+}
+
+/* Optional: Style for the container */
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for contrast */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}

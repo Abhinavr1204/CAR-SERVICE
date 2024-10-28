@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Service</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="reg.css"> <!-- Link to the new stylesheet -->
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Register Your Service</h2>
+        <form id="serviceForm" class="service-form">
+            <div class="form-group">
+                <label for="serviceName">Service Name</label>
+                <input type="text" class="form-control" id="serviceName" placeholder="Enter service name" required>
+            </div>
+            <div class="form-group">
+                <label for="serviceDescription">Description</label>
+                <textarea class="form-control" id="serviceDescription" placeholder="Describe the service" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" class="form-control" id="location" placeholder="Enter location" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="form-control" id="phone" placeholder="Enter phone number" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register Service</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+/* frontend/css/styles.css */
+
+body {
+    font-family: 'Arial', sans-serif; /* Professional font */
+    background-image: url('OIP.jpg'); /* Add your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-attachment: fixed; /* Keeps the image in place when scrolling */
+    padding: 20px; /* General padding for body */
+}
+
+.container {
+    max-width: 600px; /* Limit the width of the form */
+    margin: auto; /* Center the container */
+    padding: 30px; /* Padding inside the container */
+    background-color: white; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h2 {
+    color: #0e8faf; /* Primary color for headings */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: bold; /* Bold heading */
+}
+
+.service-form .form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+.service-form .form-control {
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ced4da; /* Light border for inputs */
+    transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+.service-form .form-control:focus {
+    border-color: #0e8faf; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(14, 143, 175, 0.5); /* Subtle shadow on focus */
+}
+
+.btn-primary {
+    background-color: #0e8faf; /* Primary button color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding inside button */
+    font-size: 16px; /* Font size for button text */
+}
+
+.btn-primary:hover {
+    background-color: #007a8c; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Less padding on mobile */
+    }
+}
